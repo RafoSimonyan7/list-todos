@@ -1,0 +1,10 @@
+<app-list-todo (personEventEmiiter)="addPerson($event)"></app-list-todo>
+
+<div class="person">
+    <div *ngFor="let person of newPerson let i = index" class="personsInfo">
+        <h3>{{person.firstname}}</h3>
+        <h3>{{person.lastName}}</h3>
+        <h3>{{person.age}}</h3>
+        <button (click)="removePerson(i)">Remove</button>
+    </div>
+</div>

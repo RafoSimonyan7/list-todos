@@ -1,0 +1,8 @@
+<div class="main">
+    <div class="inputs">
+        <input type="text" placeholder="First Name" #firstName>
+        <input type="text" placeholder="Last Name" #lastName>
+        <input type="text" placeholder="Age" #age>
+    </div>
+    <button (click)="addNewPerson(firstName.value, lastName.value, age.value)">ADD</button>
+</div>
